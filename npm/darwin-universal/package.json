@@ -1,0 +1,15 @@
+{
+  "name": "@faga/escape-html-darwin-universal",
+  "version": "0.0.0",
+  "os": [
+    "darwin"
+  ],
+  "main": "escape-html.darwin-universal.node",
+  "files": [
+    "escape-html.darwin-universal.node"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">= 10"
+  }
+}
