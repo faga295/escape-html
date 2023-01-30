@@ -4,7 +4,7 @@
 extern crate napi_derive;
 
 #[napi]
-pub fn escape(html: String) -> String {
+pub fn escape_html(html: String) -> String {
   html
     .replace('"', "&quot;")
     .replace('&', "&amp;")

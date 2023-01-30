@@ -24,10 +24,23 @@
   "license": "MIT",
   "devDependencies": {
     "@napi-rs/cli": "^2.14.5",
-    "ava": "^5.1.1"
+    "@swc-node/register": "^1.5.5",
+    "@swc/core": "^1.3.31",
+    "ava": "^5.1.1",
+    "typescript": "^4.9.4"
   },
   "ava": {
-    "timeout": "3m"
+    "require": [
+      "@swc-node/register"
+    ],
+    "extensions": [
+      "ts"
+    ],
+    "timeout": "2m",
+    "workerThreads": false,
+    "environmentVariables": {
+      "TS_NODE_PROJECT": "./tsconfig.json"
+    }
   },
   "engines": {
     "node": ">= 10"

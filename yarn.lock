@@ -10,7 +10,10 @@ __metadata:
   resolution: "@faga/escape-html@workspace:."
   dependencies:
     "@napi-rs/cli": ^2.14.5
+    "@swc-node/register": ^1.5.5
+    "@swc/core": ^1.3.31
     ava: ^5.1.1
+    typescript: ^4.9.4
   languageName: unknown
   linkType: soft
 
@@ -74,6 +77,151 @@ __metadata:
     mkdirp: ^1.0.4
     rimraf: ^3.0.2
   checksum: 52dc02259d98da517fae4cb3a0a3850227bdae4939dda1980b788a7670636ca2b4a01b58df03dd5f65c1e3cb70c50fa8ce5762b582b3f499ec30ee5ce1fd9380
+  languageName: node
+  linkType: hard
+
+"@swc-node/core@npm:^1.9.2":
+  version: 1.9.2
+  resolution: "@swc-node/core@npm:1.9.2"
+  peerDependencies:
+    "@swc/core": ">= 1.3"
+  checksum: 2a91a294b9947b33d0244d5e176a89adc6986c04b9b9e0ec0471815bc3d6d7f250be4546e9bc19f30bce5c5f0dbea01ed13bca351c5dfd45e54e9becae3fa0f4
+  languageName: node
+  linkType: hard
+
+"@swc-node/register@npm:^1.5.5":
+  version: 1.5.5
+  resolution: "@swc-node/register@npm:1.5.5"
+  dependencies:
+    "@swc-node/core": ^1.9.2
+    "@swc-node/sourcemap-support": ^0.2.3
+    colorette: ^2.0.19
+    debug: ^4.3.4
+    pirates: ^4.0.5
+    tslib: ^2.4.1
+  peerDependencies:
+    "@swc/core": ">= 1.3"
+    typescript: ">= 4.3"
+  checksum: b05b5526077486355466bbc7bf86ad2c3aef8f90a789aa0f84f39503dd90b0285d01d7c12995a51d90c0f9a27fa24f0aea290b2cd69d041098751016602546cf
+  languageName: node
+  linkType: hard
+
+"@swc-node/sourcemap-support@npm:^0.2.3":
+  version: 0.2.3
+  resolution: "@swc-node/sourcemap-support@npm:0.2.3"
+  dependencies:
+    source-map-support: ^0.5.21
+    tslib: ^2.4.1
+  checksum: 837ee82dcda8b937c4a7d9e39a4dbe8c0d01080a73b77613a6e2e30cdc3eb944ce2c4bc470673e7d0a5ce902929a4a75dc2fcfeb5b8069fb0ae862176a2fcf92
+  languageName: node
+  linkType: hard
+
+"@swc/core-darwin-arm64@npm:1.3.31":
+  version: 1.3.31
+  resolution: "@swc/core-darwin-arm64@npm:1.3.31"
+  conditions: os=darwin & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@swc/core-darwin-x64@npm:1.3.31":
+  version: 1.3.31
+  resolution: "@swc/core-darwin-x64@npm:1.3.31"
+  conditions: os=darwin & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@swc/core-linux-arm-gnueabihf@npm:1.3.31":
+  version: 1.3.31
+  resolution: "@swc/core-linux-arm-gnueabihf@npm:1.3.31"
+  conditions: os=linux & cpu=arm
+  languageName: node
+  linkType: hard
+
+"@swc/core-linux-arm64-gnu@npm:1.3.31":
+  version: 1.3.31
+  resolution: "@swc/core-linux-arm64-gnu@npm:1.3.31"
+  conditions: os=linux & cpu=arm64 & libc=glibc
+  languageName: node
+  linkType: hard
+
+"@swc/core-linux-arm64-musl@npm:1.3.31":
+  version: 1.3.31
+  resolution: "@swc/core-linux-arm64-musl@npm:1.3.31"
+  conditions: os=linux & cpu=arm64 & libc=musl
+  languageName: node
+  linkType: hard
+
+"@swc/core-linux-x64-gnu@npm:1.3.31":
+  version: 1.3.31
+  resolution: "@swc/core-linux-x64-gnu@npm:1.3.31"
+  conditions: os=linux & cpu=x64 & libc=glibc
+  languageName: node
+  linkType: hard
+
+"@swc/core-linux-x64-musl@npm:1.3.31":
+  version: 1.3.31
+  resolution: "@swc/core-linux-x64-musl@npm:1.3.31"
+  conditions: os=linux & cpu=x64 & libc=musl
+  languageName: node
+  linkType: hard
+
+"@swc/core-win32-arm64-msvc@npm:1.3.31":
+  version: 1.3.31
+  resolution: "@swc/core-win32-arm64-msvc@npm:1.3.31"
+  conditions: os=win32 & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@swc/core-win32-ia32-msvc@npm:1.3.31":
+  version: 1.3.31
+  resolution: "@swc/core-win32-ia32-msvc@npm:1.3.31"
+  conditions: os=win32 & cpu=ia32
+  languageName: node
+  linkType: hard
+
+"@swc/core-win32-x64-msvc@npm:1.3.31":
+  version: 1.3.31
+  resolution: "@swc/core-win32-x64-msvc@npm:1.3.31"
+  conditions: os=win32 & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@swc/core@npm:^1.3.31":
+  version: 1.3.31
+  resolution: "@swc/core@npm:1.3.31"
+  dependencies:
+    "@swc/core-darwin-arm64": 1.3.31
+    "@swc/core-darwin-x64": 1.3.31
+    "@swc/core-linux-arm-gnueabihf": 1.3.31
+    "@swc/core-linux-arm64-gnu": 1.3.31
+    "@swc/core-linux-arm64-musl": 1.3.31
+    "@swc/core-linux-x64-gnu": 1.3.31
+    "@swc/core-linux-x64-musl": 1.3.31
+    "@swc/core-win32-arm64-msvc": 1.3.31
+    "@swc/core-win32-ia32-msvc": 1.3.31
+    "@swc/core-win32-x64-msvc": 1.3.31
+  dependenciesMeta:
+    "@swc/core-darwin-arm64":
+      optional: true
+    "@swc/core-darwin-x64":
+      optional: true
+    "@swc/core-linux-arm-gnueabihf":
+      optional: true
+    "@swc/core-linux-arm64-gnu":
+      optional: true
+    "@swc/core-linux-arm64-musl":
+      optional: true
+    "@swc/core-linux-x64-gnu":
+      optional: true
+    "@swc/core-linux-x64-musl":
+      optional: true
+    "@swc/core-win32-arm64-msvc":
+      optional: true
+    "@swc/core-win32-ia32-msvc":
+      optional: true
+    "@swc/core-win32-x64-msvc":
+      optional: true
+  checksum: 3846440fdfa68dfc260657584b460dd21bb65efec6b54881e8b4257e7d71655f44a37170e3edf14c3ddacb7120a9740f3a9e3a7f55ec4799402028e1fcfc21a2
   languageName: node
   linkType: hard
 
@@ -343,6 +491,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"buffer-from@npm:^1.0.0":
+  version: 1.1.2
+  resolution: "buffer-from@npm:1.1.2"
+  checksum: 0448524a562b37d4d7ed9efd91685a5b77a50672c556ea254ac9a6d30e3403a517d8981f10e565db24e8339413b43c97ca2951f10e399c6125a0d8911f5679bb
+  languageName: node
+  linkType: hard
+
 "cacache@npm:^16.1.0":
   version: 16.1.3
   resolution: "cacache@npm:16.1.3"
@@ -514,6 +669,13 @@ __metadata:
   bin:
     color-support: bin.js
   checksum: 9b7356817670b9a13a26ca5af1c21615463b500783b739b7634a0c2047c16cef4b2865d7576875c31c3cddf9dd621fa19285e628f20198b233a5cfdda6d0793b
+  languageName: node
+  linkType: hard
+
+"colorette@npm:^2.0.19":
+  version: 2.0.19
+  resolution: "colorette@npm:2.0.19"
+  checksum: 888cf5493f781e5fcf54ce4d49e9d7d698f96ea2b2ef67906834bb319a392c667f9ec69f4a10e268d2946d13a9503d2d19b3abaaaf174e3451bfe91fb9d82427
   languageName: node
   linkType: hard
 
@@ -1549,6 +1711,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"pirates@npm:^4.0.5":
+  version: 4.0.5
+  resolution: "pirates@npm:4.0.5"
+  checksum: c9994e61b85260bec6c4fc0307016340d9b0c4f4b6550a957afaaff0c9b1ad58fbbea5cfcf083860a25cb27a375442e2b0edf52e2e1e40e69934e08dcc52d227
+  languageName: node
+  linkType: hard
+
 "pkg-conf@npm:^4.0.0":
   version: 4.0.0
   resolution: "pkg-conf@npm:4.0.0"
@@ -1778,6 +1947,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"source-map-support@npm:^0.5.21":
+  version: 0.5.21
+  resolution: "source-map-support@npm:0.5.21"
+  dependencies:
+    buffer-from: ^1.0.0
+    source-map: ^0.6.0
+  checksum: 43e98d700d79af1d36f859bdb7318e601dfc918c7ba2e98456118ebc4c4872b327773e5a1df09b0524e9e5063bb18f0934538eace60cca2710d1fa687645d137
+  languageName: node
+  linkType: hard
+
+"source-map@npm:^0.6.0":
+  version: 0.6.1
+  resolution: "source-map@npm:0.6.1"
+  checksum: 59ce8640cf3f3124f64ac289012c2b8bd377c238e316fb323ea22fbfe83da07d81e000071d7242cad7a23cd91c7de98e4df8830ec3f133cb6133a5f6e9f67bc2
+  languageName: node
+  linkType: hard
+
 "sprintf-js@npm:~1.0.2":
   version: 1.0.3
   resolution: "sprintf-js@npm:1.0.3"
@@ -1901,10 +2087,37 @@ __metadata:
   languageName: node
   linkType: hard
 
+"tslib@npm:^2.4.1":
+  version: 2.5.0
+  resolution: "tslib@npm:2.5.0"
+  checksum: ae3ed5f9ce29932d049908ebfdf21b3a003a85653a9a140d614da6b767a93ef94f460e52c3d787f0e4f383546981713f165037dc2274df212ea9f8a4541004e1
+  languageName: node
+  linkType: hard
+
 "type-fest@npm:^0.13.1":
   version: 0.13.1
   resolution: "type-fest@npm:0.13.1"
   checksum: e6bf2e3c449f27d4ef5d56faf8b86feafbc3aec3025fc9a5fbe2db0a2587c44714521f9c30d8516a833c8c506d6263f5cc11267522b10c6ccdb6cc55b0a9d1c4
+  languageName: node
+  linkType: hard
+
+"typescript@npm:^4.9.4":
+  version: 4.9.4
+  resolution: "typescript@npm:4.9.4"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: e782fb9e0031cb258a80000f6c13530288c6d63f1177ed43f770533fdc15740d271554cdae86701c1dd2c83b082cea808b07e97fd68b38a172a83dbf9e0d0ef9
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@^4.9.4#~builtin<compat/typescript>":
+  version: 4.9.4
+  resolution: "typescript@patch:typescript@npm%3A4.9.4#~builtin<compat/typescript>::version=4.9.4&hash=ad5954"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 1caaea6cb7f813e64345190fddc4e6c924d0b698ab81189b503763c4a18f7f5501c69362979d36e19c042d89d936443e768a78b0675690b35eb663d19e0eae71
   languageName: node
   linkType: hard
 
