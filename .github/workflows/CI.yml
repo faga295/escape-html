@@ -187,6 +187,7 @@ jobs:
             export PATH="/usr/local/cargo/bin:$PATH"
             pwd
             ls -lah
+            ls
             whoami
             env
             freebsd-version
