@@ -187,12 +187,12 @@ jobs:
             export PATH="/usr/local/cargo/bin:$PATH"
             pwd
             ls -lah
-            ls
             whoami
             env
             freebsd-version
             yarn install
             yarn build
+            ls
             strip -x *.node
             yarn test
             rm -rf node_modules
