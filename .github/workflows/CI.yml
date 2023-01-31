@@ -473,7 +473,7 @@ jobs:
       - name: Publish
         if: "startsWith(github.event.head_commit.message, 'chore(release): publish')"
         run: |
-          npm ci
+          echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
           npm publish --access public
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
