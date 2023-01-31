@@ -472,7 +472,9 @@ jobs:
         shell: bash
       - name: Publish
         if: "startsWith(github.event.head_commit.message, 'chore(release): publish')"
-        run: npm publish --access public
+        run: |
+          npm ci
+          npm publish --access public
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
