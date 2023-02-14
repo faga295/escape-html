@@ -1,24 +1,21 @@
 import {suite, add, cycle, complete } from 'benny'
 import { escapeHtml as escapeHtmlRs } from '../index'
 import  escapeHtml  from 'escape-html'
+import  { escapeHTML as escape } from '@napi-rs/escape'
+import html from './html'
 suite(
-  'Example',
-
-  add('rust', () => {
-    escapeHtml(`<template>
-    <Mafs :viewBox="{x:[-7, 7], y:[-3, 3], padding: 1 }">
-        <CartesianCoordinates></CartesianCoordinates>
-    </Mafs>
-    </template>`
-    )
-  }),
+  'escape html',
 
   add('js', () => {
-    escapeHtmlRs(`<template>
-    <Mafs :viewBox="{x:[-7, 7], y:[-3, 3], padding: 1 }">
-        <CartesianCoordinates></CartesianCoordinates>
-    </Mafs>
-</template>`)
+    escapeHtml(html)
+  }),
+
+  add('rs', () => {
+    escapeHtmlRs(html)
+  }),
+  
+  add('@napi-rs/escape-html', () => {
+    escape(html)
   }),
 
   cycle(),
